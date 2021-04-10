@@ -1,6 +1,15 @@
+import React from "react";
+import Plans from "../components/Plans";
+import SectionIntroduction from "../components/SectionIntroduction";
+import { ContentContainer } from '../styles/home.styles'
 
 export default function Home() {
   return (
-    <h1>Teste</h1>
+    <>
+      <ContentContainer>
+        <SectionIntroduction />
+        <Plans></Plans>
+      </ContentContainer>
+    </>
   )
 }
