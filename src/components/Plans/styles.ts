@@ -4,48 +4,113 @@ export const Container = styled.section`
   background: #202020;
   color: #fff;
   display: flex;
-  flex-direction: column;
-
+  width: 100%;
   justify-content: center;
-  align-items: center;
 `;
 
 export const Content = styled.div`
-  padding: 6rem 0;
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 
-  h1 span{
-    color: #FAC600;
+  h1 {
+    margin-bottom: 2rem;
+    font-size: 36px;
+    font-weight: 700;
+
+    span {
+      color: var(--yellow);
+    }
+  }
+
+  > p {
+    font-size: 24px;
+    margin-bottom: 3rem;
+  }
+
+  padding: 2.5rem 1rem 0rem;
+`;
+
+export const PlansContent = styled.div`
+  /* align-items: center; */
+  /* margin: 0 auto; */
+  justify-content: center;
+
+  display: grid;
+
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 24px;
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(1, minmax(300px, auto));
+  }
+
+  h1 span {
+    color: #fac600;
   }
 
   p {
-    padding: 2rem 8rem 3rem;
+    /* padding: 2rem 8rem 3rem; */
     text-align: center;
   }
 
-  display: flex;
-  width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  flex-direction: column;
+  .yellow > div {
+    background: #fac600;
 
-  align-items: center;
-`;
-
-export const ContainerCard = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: center;
-
-  max-width: 1120px;
+    h2 {
+      color: #000000;
+    }
+  }
 `;
 
 export const CardPlan = styled.div`
   background: #fff;
   color: #3d3d3d;
-  max-width: 22rem;
-  width: 100%;
+  width: 300px;
 
-  div {
+  section {
+    padding: 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > p {
+      color: #212529;
+      font-size: 18px;
+      margin-bottom: 1.5rem;
+    }
+
+    > div {
+      margin-bottom: 1.5rem;
+    }
+
+    h4 {
+      color: #808080;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        font-weight: 700;
+
+        & + li {
+          margin-top: 24px;
+        }
+      }
+
+      margin-bottom: 24px;
+    }
+  }
+
+  > div {
     background: #0e0e0e;
     color: #fff;
     height: 10rem;
@@ -53,21 +118,20 @@ export const CardPlan = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+    display: flex;
+    flex-direction: column;
 
-  section {
-    text-align: center;
-    padding: 2rem 0;
-  }
+    p {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
 
-  .yellow-background{
-    background: #FAC600;
-    color: #000;
+    h2 {
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #fac600;
+    }
   }
-
-  & + & {
-    margin-left: 1rem;
-  }
-
-  
 `;

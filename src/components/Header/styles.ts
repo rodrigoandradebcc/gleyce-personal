@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   background: #fac600;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 `;
 
 export const MenuLogo = styled.div`
@@ -12,11 +16,10 @@ export const MenuLogo = styled.div`
 `;
 
 export const Content = styled.div`
-
   max-width: 1120px;
-  padding: 0.5rem 1rem .5rem;
-  margin: 0 auto;
+  padding: 0.5rem 1rem 0.5rem;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 `;

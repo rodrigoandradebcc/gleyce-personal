@@ -9,8 +9,8 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 1rem 4rem;
+
 
   h1 {
     color: #3d3d3d;
@@ -18,8 +18,6 @@ export const Container = styled.div`
   }
 
   
-
-
   img {
     width: 100%;
     max-width: 300px;

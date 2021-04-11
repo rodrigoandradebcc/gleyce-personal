@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const ContentContainer = styled.div`
+export const PageLanding = styled.div`
   margin: 0 auto;
 
   width: 100%;
+  height: 90vh;
 
 
 `
