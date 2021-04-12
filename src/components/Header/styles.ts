@@ -6,6 +6,10 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 900px) {
+    height: 100px;
+  }
 `;
 
 export const MenuLogo = styled.div`
@@ -22,6 +26,14 @@ export const Content = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+
+    nav {
+      display: none;
+    }
+  }
 `;
 
 export const Nav = styled.nav`

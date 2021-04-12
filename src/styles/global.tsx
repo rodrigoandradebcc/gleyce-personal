@@ -24,6 +24,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   a{
     color: inherit;
     text-decoration: none;

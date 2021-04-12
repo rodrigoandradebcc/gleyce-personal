@@ -31,7 +31,7 @@ export const Content = styled.div`
     margin-bottom: 3rem;
   }
 
-  padding: 2.5rem 1rem 0rem;
+  padding: 2.5rem 1rem 5.5rem;
 `;
 
 export const PlansContent = styled.div`

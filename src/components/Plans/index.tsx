@@ -1,4 +1,5 @@
 
+import { motion } from 'framer-motion';
 import Button from '../Button';
 import Separator from '../Separator';
 import { Container, CardPlan, PlansContent, Content } from './styles';
@@ -12,7 +13,10 @@ function Plans() {
         especialmente para você levando em consideração todas as suas limitações
            e características</p>
         <PlansContent>
-          <CardPlan>
+          <CardPlan
+            as={motion.div}
+            whileHover={{ scale: 1.2, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}
+          >
             <div>
               <p>Plano</p>
               <h2>PERSONAL</h2>
@@ -51,11 +55,12 @@ function Plans() {
               </ul>
 
 
-              <Button background="#D52B1E" onClick={() => window.location.href="https://api.whatsapp.com/send?phone=5591982839167&text=Estou%20interessado%20no%20Plano%20Personal"}>Contratar</Button>
+              <Button background="#D52B1E" onClick={() => window.location.href = "https://api.whatsapp.com/send?phone=5591982839167&text=Estou%20interessado%20no%20Plano%20Personal"}>Contratar</Button>
             </section>
           </CardPlan>
 
-          <CardPlan className="yellow">
+          <CardPlan className="yellow" as={motion.div}
+            whileHover={{ scale: 1.2, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}>
             <div>
               <p>Plano</p>
               <h2>QUINZENAL</h2>
@@ -91,12 +96,13 @@ function Plans() {
                 </li>
               </ul>
               <Button background="#D52B1E"
-                onClick={() => window.location.href="https://api.whatsapp.com/send?phone=5591982839167&text=Estou%20interessado%20no%20Plano%20Quinzenal"}
+                onClick={() => window.location.href = "https://api.whatsapp.com/send?phone=5591982839167&text=Estou%20interessado%20no%20Plano%20Quinzenal"}
               >Contratar</Button>
             </section>
           </CardPlan>
 
-          <CardPlan>
+          <CardPlan as={motion.div}
+            whileHover={{ scale: 1.2, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' }}>
             <div>
               <p>Plano</p>
               <h2>MENSAL</h2>
@@ -132,7 +138,7 @@ function Plans() {
                 </li>
               </ul>
               <Button background="#D52B1E"
-                onClick={() => window.location.href="https://api.whatsapp.com/send?phone=5591982839167&text=Estou%20interessado%20no%20Plano%20Mensal"}
+                onClick={() => window.location.href = "https://api.whatsapp.com/send?phone=5591982839167&text=Estou%20interessado%20no%20Plano%20Mensal"}
               >Contratar</Button>
             </section>
           </CardPlan>

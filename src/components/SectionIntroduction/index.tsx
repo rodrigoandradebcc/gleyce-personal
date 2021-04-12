@@ -1,16 +1,37 @@
-import { Container } from './styles';
+import { Container, Img, H1 } from './styles';
+import { motion } from 'framer-motion';
 
 function SectionIntroduction() {
   return (
     <Container>
-      <h1>
+      <H1 
+        as={motion.h1}
+        transition={{ ease: "easeOut", duration: 1 }}
+        variants={{
+          show: { opacity: 1, x: '0' },
+          hidden: { opacity: 0, x: '-100vw' },
+        }}
+        initial="hidden"
+        animate="show"
+        >
         Sou a professora Gleyce Cristina,
-        <br /> atuando na area de Educação Física há 6 anos,
+        atuo na área da Educação Física há 6 anos,
         formada pela UEPA e especialista em Bases fisiológicas do treinamento
         personalizado e nutrição esportiva.
-      </h1>
-      <img src="/images/gleyce.jpeg" alt="Foto Gleyce" />
-
+      </H1>
+      <Img
+        src="/images/gleyce.jpeg"
+        alt="Foto Gleyce"
+        as={motion.img}
+        // transition={{ delay: 0, duration: 0.5 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        variants={{
+          show: { opacity: 1, x: '0' },
+          hidden: { opacity: 0, x: '100vw' },
+        }}
+        initial="hidden"
+        animate="show"
+      />
     </Container>
   );
 };
