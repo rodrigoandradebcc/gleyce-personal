@@ -12,8 +12,9 @@ export const Container = styled.div`
   padding: 4rem 1rem 4rem;
 
   h1 {
-    color: #3d3d3d;
+    color: #313131;
     font-weight: 400;
+    max-width: 680px;
   }
 
   img {
@@ -22,16 +23,24 @@ export const Container = styled.div`
     border-radius: 50%;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
+
+    /* background-image: url('/images/gleyce.jpeg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
     h1 {
       width: 100%;
       text-align: center;
-      margin-bottom: 4rem;
+      /* color: #fff; */
+      font-weight: 600;
     }
 
     img {
-      
+      margin-bottom: 2rem;
+      /* display: none; */
     }
   }
 `;
@@ -39,4 +48,3 @@ export const Container = styled.div`
 export const Img = styled.img``;
 
 export const H1 = styled.h1``;
-

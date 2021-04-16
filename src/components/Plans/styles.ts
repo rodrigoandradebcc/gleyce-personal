@@ -35,8 +35,6 @@ export const Content = styled.div`
 `;
 
 export const PlansContent = styled.div`
-  /* align-items: center; */
-  /* margin: 0 auto; */
   justify-content: center;
 
   display: grid;
@@ -54,7 +52,6 @@ export const PlansContent = styled.div`
   }
 
   p {
-    /* padding: 2rem 8rem 3rem; */
     text-align: center;
   }
 
@@ -67,71 +64,82 @@ export const PlansContent = styled.div`
   }
 `;
 
+export const Specifications = styled.div`
+  > h4 {
+    color: #808080;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  div {
+    margin-top: 1.5rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 18px;
+    color: #212529;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-weight: 700;
+
+      & + li {
+        margin-top: 24px;
+      }
+    }
+
+    margin-bottom: 24px;
+  }
+`;
+
+export const HeaderCard = styled.div`
+  max-height: 160px;
+  background: #0e0e0e;
+  color: #fff;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fac600;
+  }
+`;
+
 export const CardPlan = styled.div`
   background: #fff;
   color: #3d3d3d;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
 
   section {
-    padding: 1rem 1rem;
+    height: calc(100% - 160px);
+    padding: 1.5rem 1rem;
 
     display: flex;
+
+
     flex-direction: column;
     align-items: center;
-
-    > p {
-      color: #212529;
-      font-size: 18px;
-      margin-bottom: 1.5rem;
-    }
-
-    > div {
-      margin-bottom: 1.5rem;
-    }
-
-    h4 {
-      color: #808080;
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style: none;
-
-      li {
-        font-weight: 700;
-
-        & + li {
-          margin-top: 24px;
-        }
-      }
-
-      margin-bottom: 24px;
-    }
-  }
-
-  > div {
-    background: #0e0e0e;
-    color: #fff;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
-    p {
-      font-size: 24px;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    h2 {
-      font-size: 48px;
-      text-transform: uppercase;
-      font-weight: 500;
-      color: #fac600;
-    }
+    justify-content: space-between;
   }
 `;
